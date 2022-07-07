@@ -10,6 +10,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* BASE LAYOUT */
 
+
 html {
     background-color: #ddd;
     background-image: -moz-linear-gradient(center top, #aaa, #ddd);
@@ -43,6 +44,9 @@ body {
 
 #grailsLogo {
     background-color: #feb672;
+}
+div.container-fluid {
+    background-color: #663300;
 }
 
 a:hover, a:active {
@@ -96,7 +100,7 @@ img {
 }
 
 .footer {
-    background: #424649;
+    background: #663300;
     color: #ffffff;
     clear: both;
     font-size: 1em;
@@ -191,7 +195,7 @@ img {
 }
 
 .nav li.dropdown.show ul.dropdown-menu {
-    background-color: #424649;
+    background-color: #663300;
 }
 
 /* CREATE/EDIT FORMS AND SHOW PAGES */
