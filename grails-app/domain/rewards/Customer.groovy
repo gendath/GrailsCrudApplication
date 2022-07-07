@@ -3,13 +3,13 @@ package rewards
 class Customer {
     String firstName
     String lastName
-    Long phoneNumber
+    Long phone
     String email
     Integer totalPoints
     static hasMany = [awards:Award,orders:OnlineOrder]
 
     static constraints = {
-        phoneNumber()
+        phone()
         firstName(nullable: true)
         lastName(nullable: true)
         email(nullable: true, email: true)

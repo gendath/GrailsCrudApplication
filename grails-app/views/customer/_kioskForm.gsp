@@ -7,15 +7,14 @@
 
     <div class="row">
         <div class="col-sm-5 pt-5 offset-1">
-            <h4>Welcome back, Perry!</h4>
+            <h4>${welcomeMessage}</h4>
 
-            <p>You have 3 points!</p>
 
 
         </div>
 
         <div class="col-sm-6">
-            <g:textField class="form-control" placeholder="Phone Number" name="phoneNumber" value="${phoneNumber}" />
+            <g:textField class="form-control" placeholder="Phone Number" name="phone" value="${customerInstance?.phone}" />
 
             <div class="row">
                 <h3>&nbsp;</h3>
@@ -77,13 +76,13 @@
 
             <div class="row">
                 <div class="col-sm-4">
-                    <input name="pad" value="Del" type="button" class="btn btn-danger btn-lg btn-block" onclick="clearPhone()" />
+                    <g:link  class="btn btn-danger btn-lg btn-block" action="checkin">Del</g:link>
                 </div>
                 <div class="col-sm-4">
                     <input name="pad" value="0" type="button" class="btn btn-primary btn-lg btn-block" onclick="padkey(this.value)" />
                 </div>
                 <div class="col-sm-4">
-                    <input name="pad" value="Go" type="button" class="btn btn-success btn-lg btn-block" />
+                    <g:submitButton name="pad" value="Go"  class="btn btn-success btn-lg btn-block" />
                 </div>
 
             </div>
@@ -100,12 +99,12 @@
 <!-- pad button script -->
 <script>
     function padkey(num) {
-        let txt=document.getElementById("phoneNumber").value;
+        let txt=document.getElementById("phone").value;
         txt=txt + num;
-        document.getElementById("phoneNumber").value=txt;
+        document.getElementById("phone").value=txt;
     }
     function clearPhone(){
-        document.getElementById("phoneNumber").value="";
+        document.getElementById("phone").value="";
 
     }
 </script>
