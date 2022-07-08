@@ -23,6 +23,7 @@ apply plugin:"com.bertramlabs.asset-pipeline"
 
 repositories {
     maven { url "https://repo.grails.org/grails/core" }
+    mavenCentral()
 }
 
 configurations {
@@ -73,6 +74,7 @@ dependencies {
     testImplementation "org.seleniumhq.selenium:selenium-support:4.0.0"
     testRuntimeOnly "org.seleniumhq.selenium:selenium-chrome-driver:4.0.0"
     testRuntimeOnly "org.seleniumhq.selenium:selenium-firefox-driver:4.0.0"
+    testCompile "io.micronaut:micronaut-http-client:$micronautVersion"
 }
 
 bootRun {

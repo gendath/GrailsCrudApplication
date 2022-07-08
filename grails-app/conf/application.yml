@@ -1,4 +1,8 @@
 ---
+endpoints:
+    enabled: true
+    jmx:
+        enabled: true
 grails:
     profile: web
     codegen:

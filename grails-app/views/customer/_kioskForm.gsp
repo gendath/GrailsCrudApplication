@@ -4,16 +4,18 @@
             <asset:image src="banner.png" alt="Banner"/>
         </div>
     </div>
-
-    <div class="row">
-        <div class="col-sm-5 pt-5 offset-1">
+    <hr>
+    <div class="row mt-5">
+        <div class="col-lg-5 pt-5 offset-lg-1 col-md-12">
             <h4>${welcomeMessage}</h4>
+
+            <a href='/customer/profile/${customerInstance?.phone}'>${customerInstance?"Edit Your Profile":"" }</a>
 
 
 
         </div>
 
-        <div class="col-sm-6">
+        <div class="col-lg-6 col-md-12">
             <g:textField class="form-control" placeholder="Phone Number" name="phone" value="${customerInstance?.phone}" />
 
             <div class="row">

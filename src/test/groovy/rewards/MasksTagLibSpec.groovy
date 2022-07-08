@@ -1,9 +1,9 @@
 package rewards
 
-import grails.testing.services.ServiceUnitTest
+import grails.testing.web.taglib.TagLibUnitTest
 import spock.lang.Specification
 
-class CustomerDataServiceSpec extends Specification implements ServiceUnitTest<CustomerDataService>{
+class MasksTagLibSpec extends Specification implements TagLibUnitTest<MasksTagLib> {
 
     def setup() {
     }

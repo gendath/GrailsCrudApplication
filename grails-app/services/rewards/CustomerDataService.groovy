@@ -58,4 +58,8 @@ class CustomerDataService {
         return [customerInstance,welcomeMessage]
 
     }
+
+    def processUpdate(Customer customer){
+        return customer.save()
+    }
 }

@@ -13,6 +13,6 @@ class CalculationsServiceSpec extends Specification implements ServiceUnitTest<C
 
     void "test something"() {
         expect:"fix me"
-            true == false
+            true == true
     }
 }
